@@ -1,0 +1,21 @@
+---
+title: Dojo
+---
+
+<div class='post'>
+<h3>General information</h3>
+<p><a href='/2012/07/dojoinfo/'> &raquo; General coding dojo information</a></p>
+<h3>Dojo events</h3>
+<% sorted_articles.each do |post| %>
+<% if post[:tags] != 'dojoevent' then next end%>
+<div class='post'>
+  <span><%= get_event_date(post) %> / <%= get_event_place(post) %></span> &raquo; <%= link_to post[:title], post.path %>
+</div>
+<% end %>
+<h3>Code</h3>
+<p><a href='github.com/bintrue/codingdojo'> &raquo; github.com/bintrue/codingdojo</a></p>
+<h3>Our awesome flyer</h3>
+<img src=/img/dojo.png>
+</div>
+
+
