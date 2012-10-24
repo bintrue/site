@@ -1,0 +1,4 @@
+*.swp
+crash.log
+output
+tmp
